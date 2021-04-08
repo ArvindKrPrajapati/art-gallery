@@ -1,0 +1,23 @@
+ <div class="main" [hidden]="!toggleMenu" (click)="toggleMenu=!toggleMenu"></div>
+
+ <div class="header">
+  <table width="100%">
+    <tr>
+      <td width="45px">
+        <div class="toggle" (click)="toggleMenu=!toggleMenu">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      </td>
+      <td>
+
+        <span class="rainbow">{{title}}</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <app-side-menu [toggleMenu]="toggleMenu"></app-side-menu>
+</div>
+

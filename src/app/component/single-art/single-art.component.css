@@ -1,0 +1,75 @@
+.main {
+  padding-top: 60px;
+  width: 70%;
+  height: 100%;
+  margin-left: 270px;
+  position: fixed;
+  overflow: scroll;
+}
+
+#pro {
+  height: 350px;
+  display: block;
+  margin: auto;
+  box-shadow: 1px 1px 10px silver;
+}
+
+
+.container {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+}
+.price {
+  color: green;
+  letter-spacing: 1px;
+}
+.art-name {
+  letter-spacing: 0.7px;
+  font-weight: 460px;
+
+}
+.desc {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 19px;
+  color: rgb(0,107,134);
+  font-weight: 395;
+}
+.artist-name {
+  color: dodgerblue;
+  letter-spacing: 1px;
+}
+.btn-group {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  z-index: 4;
+}
+.btn-group button {
+  width: 35%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buy {
+  background: #00992a;
+}
+.add-to-cart {
+  background: orange;
+}
+button:focus {
+  outline: none;
+}
+@media screen and (max-width:480px) {
+  .main {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .btn-group button {
+    width: 50%;
+  }
+}

@@ -1,0 +1,37 @@
+<section id="main">
+  <b class="title">Trending</b>
+  <div class="trending">
+    <div *ngFor="let x of arts" class="card onHover" (click)="goToSingleArt(x.id)">
+      <img [src]="x.img" id="pro1" />
+      <p>
+        {{x.name}}
+      </p>
+      <b class="price">Rs {{x.price}}</b>
+    </div>
+  </div>
+  <a [routerLink]= "['/exhibition']" class="see-more">see more</a>
+  <br>
+  <br>
+  
+  
+  
+  <b class="title">Lekha Art Gallery</b>
+  <div class="main onHover">
+    <div class="container" *ngFor="let art of arts">
+      <img [src]="art.img" id="pro" />
+    </div>
+  </div>
+  <a href="" class="see-more">see more</a>
+  <br><br>
+  
+  
+  <b class="title">Top Artist</b>
+  <div class="artist">
+    <div class="artist-container onHover" *ngFor="let y of arts">
+    <img [src]="y.img" id="pro-artist"/>
+    <br>
+    <strong>{{y.name}}</strong>
+    </div>
+  </div>
+  <a href="" class="see-more">see more</a>
+</section>

@@ -1,0 +1,56 @@
+.main {
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 70px;
+  width: 70%;
+  height: 100%;
+  margin-left: 270px;
+  position: fixed;
+  overflow: scroll;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr;
+
+}
+.art {
+  background:white;
+  padding:8px;
+  margin: 8px;
+  height: 300px;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+}
+#pro {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.price,.name{
+  display: block;
+  margin:3px;
+  margin-left:10px;
+  color:green;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight:bold;
+}
+.name{
+  color: rgb(0,107,134);
+  font-size:16px;
+  letter-spacing: 1px;
+  font-weight:400;
+}
+
+.container:hover{
+ box-shadow: 1px 1px 10px grey;
+}
+@media screen and (max-width:480px) {
+  .main {
+    padding-top: 60px;
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+  }
+}

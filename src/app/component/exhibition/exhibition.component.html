@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="container"  (click)="goToDetails(art.id)"  *ngFor="let art of data">
+    <div class="art">
+      <img [src]="art.img" id="pro" />
+    </div>
+      <p class="name">
+        {{art.name}}
+      </p>
+      <p class="price">
+        Rs {{art.price}}
+      </p>
+      <br>
+  </div>
+</div>
